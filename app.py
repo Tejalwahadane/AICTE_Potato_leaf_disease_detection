@@ -14,7 +14,7 @@ if not os.path.exits(model_path):
 
 model_path="trained_plant_disease_model.keras"
 
-def model_prediction(test_image)
+def model_prediction(test_image):
     model=tf.keras.models.load_model(model_path)
     image=tf.keras.preprocessing.image.load_img(test_image,target_size=(128,128))
     input_arr = tf.keras.preprocessing.image.img_to_array(image)
