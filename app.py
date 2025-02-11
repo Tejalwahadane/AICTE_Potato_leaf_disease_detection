@@ -8,7 +8,7 @@ file_id="1usuiXBx1iHtQ9UmJgjJg-3yS6NJ4fjRU"
 url = 'https://drive.google.com/file/d/1usuiXBx1iHtQ9UmJgjJg-3yS6NJ4fjRU/view?usp=drive_link'
 model_path= "trained_plant_disease_model.keras"
 
-if not os.path.exits(model_path):
+if not os.path.exists(model_path):
     st.warning("Downloading model from drive")
     gdown.download(url,model_path,quiet=false)
 
