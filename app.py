@@ -4,10 +4,9 @@ import numpy as np
 import gdown
 import os
 
-file_id = "1_9Q28QeJXnyRCH18IVxpX5KhuDtZC40c"
-url = 'https://drive.google.com/uc?id=1_9Q28QeJXnyRCH18IVxpX5KhuDtZC40c'
-model_path = "trained_plant_disease_model.keras"
-
+file_id="1usuiXBx1iHtQ9UmJgjJg-3yS6NJ4fjRU"
+url = 'https://drive.google.com/file/d/1usuiXBx1iHtQ9UmJgjJg-3yS6NJ4fjRU/view?usp=drive_link'
+model_path= "trained_plant_disease_model.keras"
 
 if not os.path.exists(model_path):
     st.warning("Downloading model from Google Drive...")
